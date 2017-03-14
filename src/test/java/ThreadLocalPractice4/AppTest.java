@@ -1,4 +1,4 @@
-package ThreadLocalPractice;
+package ThreadLocalPractice4;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
