@@ -15,6 +15,10 @@ public class TaskWithResult1 implements Callable<String> {
     }
 
     public String call() throws Exception {
+        if(this.id%2==0){
+            Thread.sleep(1000);
+        }
+        System.out.println(Thread.currentThread().getName());
         return "result of TaskWithResult1 " + id;
 
     }

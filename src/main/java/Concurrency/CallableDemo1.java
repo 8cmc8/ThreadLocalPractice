@@ -11,7 +11,7 @@ import java.util.concurrent.*;
 
 public class CallableDemo1 {
     public static void main(String[] args) {
-        ExecutorService exec = Executors.newCachedThreadPool();
+        ExecutorService exec = Executors.newFixedThreadPool(3);
         List<Future<String>> results = new ArrayList<Future<String>>();
         for (int i = 0; i < 10; i++) {
             results.add(exec.submit(new TaskWithResult1(i)));
